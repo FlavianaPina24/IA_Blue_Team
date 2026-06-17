@@ -74,8 +74,8 @@ O diferencial do projeto: **Atacante simula → Defesa detecta → IA aprende �
   - [x] Substituição das regras fixas por modelo em **Scikit-learn**.
   - [x] Treinamento da IA com *datasets* de tráfego de rede (Normal vs Malicioso).
 
-- [ ] **Fase 5: Sistema Completo**
-  - [ ] Integração total (Red Team vs Blue Team vs IA) em um ambiente Docker.
+- [x] **Fase 5: Sistema Completo (Concluído com Sucesso 🐳)**
+  - [x] Integração total (Red Team vs Blue Team vs IA) em um ambiente Docker via GitHub Actions.
 
 ---
 
