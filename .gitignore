@@ -4,3 +4,7 @@ __pycache__/
 
 # Configurações da IDE
 .vscode/
+
+# Arquivos gerados pelo projeto
+*.pkl
+*.csv
