@@ -1,0 +1,21 @@
+name: Docker - Build & Run IA Blue Team
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  docker-simulation:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📥 Checkout do Código
+      uses: actions/checkout@v4
+
+    - name: 🐳 Build da Imagem Docker (Fase 5)
+      run: docker build -t ia-blue-team-image .
+
+    - name: ⚔️ Executar Simulação (Red Team vs Blue Team) no Contêiner
+      run: docker run --rm ia-blue-team-image
